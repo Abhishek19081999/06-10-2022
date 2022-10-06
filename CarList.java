@@ -31,7 +31,7 @@ public class CarList {
 	
 	 private String filename;
 	 
-	//Single parameter constructor
+	//Single parameter constructor with file's name as a parameter
 	  public CarList (String filename) {
 	    this.filename = filename;
 	  }
@@ -75,7 +75,7 @@ public class CarList {
 	  
 	  //method for adding a car
 	  public void addCar(Car c) throws IOException {
-	    FileWriter fw = new FileWriter(filename, true); //open file in append mode
+	    FileWriter fw = new FileWriter(filename, true); 
 	    PrintWriter pw = new PrintWriter(fw);
 
 	    pw.println(c.getModel());
