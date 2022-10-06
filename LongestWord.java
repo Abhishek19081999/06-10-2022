@@ -13,23 +13,25 @@ public class LongestWord {
    }
     	
     	//method to find longest word
-		public String findLongestWords() throws FileNotFoundException {
+	public String findLongestWords() throws FileNotFoundException {
 		 
-		 String longest_word = "";
-		 String current;
-		 Scanner sc = new Scanner(new File("D:\\words.txt")); 
+	String longest_word = "";
+	String current;
+	Scanner sc = new Scanner(new File("D:\\words.txt")); 
 		
 		
-		 while (sc.hasNext()) {
-		    current = sc.next();
+	 while (sc.hasNext()) {		  
+		 current = sc.next();
 		     if (current.length() > longest_word.length()) {
 		       longest_word = current;
 		     }
 		
 		 }
-		   System.out.println("\n"+longest_word+"\n");		//printing longest word
-		      return longest_word;
-		      }
+
+	System.out.println("\n"+longest_word+"\n");		//printing longest word
+        return longest_word;
+	
+	}
 	
 
 }
