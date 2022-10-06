@@ -38,7 +38,7 @@ public class TestCarList {
 			
 			//removing a car and again counting total number of new cars
 			carList.removeCar(c9);
-			System.out.println("After removing new Cars: " +carList.countNewCars());
+			System.out.println("After removal, new Cars: " +carList.countNewCars());
 		
 			}
 			catch(Exception ex) { 
