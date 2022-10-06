@@ -4,16 +4,16 @@ public class TestCarList {
 
 	public static void main(String[] args) {
 		try {
-			Car c1 = new Car("Audi A5",2014,6000,1700000);
-			Car c2 = new Car("BMW",2010,55000,1500000);
-			Car c3 = new Car("MG Hector",2022,0,700000);
-			Car c4 = new Car("Kia Sonet",2012,35000,850000);
-			Car c5 = new Car("Maruti 800",2005,0,30000);
-			Car c6 = new Car("Tata Harrier",2010,100000,650000);
-			Car c7 = new Car("Rolls Royce",2013,35000,3500000);
-			Car c8 = new Car("Honda City",2007,250000,300000);
-			Car c9 = new Car("Kia Sonet",2022,0,450000);
-			Car c10= new Car("Tata Harriers",2010,356200,400000);
+			Car c1 = new Car("Audi A5",2014,6000,1700000.05);
+			Car c2 = new Car("BMW",2010,55000,1500000.07);
+			Car c3 = new Car("MG Hector",2022,0,700000.06);
+			Car c4 = new Car("Kia Sonet",2012,35000,850000.03);
+			Car c5 = new Car("Maruti 800",2005,0,30000.00);
+			Car c6 = new Car("Tata Harrier",2010,100000,650000.06);
+			Car c7 = new Car("Rolls Royce",2013,35000,3500000.08);
+			Car c8 = new Car("Honda City",2007,250000,300000.00);
+			Car c9 = new Car("Kia Sonet",2022,0,450000.05);
+			Car c10= new Car("Tata Harriers",2010,356200,400000.03);
 			
 		
 			//Creating the array to store objects of car class
