@@ -13,10 +13,12 @@ import java.util.Arrays;
 public class StoreText {
 	
     public static void main(String a[]){
-    	//creating a stringBuilder object 
+    	
+	//creating a stringBuilder object 
         StringBuilder sb = new StringBuilder(); 
         String strLine = "";
-        //creating an array list
+        
+	//creating an array list
         List<String> list = new ArrayList<String>();
         
         
@@ -34,9 +36,13 @@ public class StoreText {
             }
          System.out.println(Arrays.toString(list.toArray())); // printing the list
              br.close();
-        } catch (FileNotFoundException e) { //catching FileNotFound Exception 
+        } 
+	    
+	catch (FileNotFoundException e) { //catching FileNotFound Exception 
             System.err.println("File not found");
-        } catch (IOException e) { //catching IO Exception
+        } 
+	    
+	catch (IOException e) { //catching IO Exception
             System.err.println("Unable to read the file.");
         }
      }
