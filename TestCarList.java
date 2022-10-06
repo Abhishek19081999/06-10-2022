@@ -16,32 +16,33 @@ public class TestCarList {
 			Car c10= new Car("Tata Harriers",2010,356200,400000);
 			
 		
-		//Creating the array to store objects of car class
+			//Creating the array to store objects of car class
 			Car [] cars1 = new Car[] {c1,c2,c3,c4,c5,c6,c7,c8,c9,c10};
 			
-			
+			//create new file and delete the file if it already exists.	
 			File f = new File("cars.txt");
 			f.delete();
 			
-		//Creating the object of CarList
+			//Creating the object of CarList
 			CarList carList = new CarList("cars.txt");
 			
 			for(Car c : cars1) {
 				carList.addCar(c);
 			}
 			
-		//printing no. of new car
+			// Total no. of new cars
 			System.out.println("New Cars : " + carList.countNewCars());
 			
-		//print most expensive car.
+			//shows most expensive car.
 			System.out.println("Most expensive Car : " +carList.mostExpensiveCar());
 			
-		/*carList.removeCar(c9);
+			//removing a car and again counting total number of new cars
+			carList.removeCar(c9);
 			System.out.println("After removing new Cars: " +carList.countNewCars());
-		*/
+		
 			}
 			catch(Exception ex) { 
-		// for any Exception
+			// for any Exception
 				System.out.println(ex.getMessage());
 			}
 
